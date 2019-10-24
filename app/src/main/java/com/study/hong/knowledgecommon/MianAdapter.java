@@ -43,7 +43,6 @@ public class MianAdapter extends RecyclerView.Adapter<MianAdapter.MainViewHolder
             @Override
             public void onClick(View v) {
 
-//                Intent intent = new Intent(mContext, FrameAnimation.class);
                 Intent intent = new Intent(mContext, listBeans.get(position).getClassName().getClass());
                 mContext.startActivity(intent);
             }

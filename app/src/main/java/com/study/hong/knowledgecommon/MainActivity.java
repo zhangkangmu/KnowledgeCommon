@@ -30,11 +30,8 @@ public class MainActivity extends Activity {
     }
     private void initDates() {
         map = new HashMap<>();
-        listBeans = new ArrayList<ListBean>();
-        listBeans.add(new ListBean("zzz", new FrameAnimation()));
-        listBeans.add(new ListBean("zz23sz", new FrameAnimation()));
-        listBeans.add(new ListBean("zzsdasdz", new FrameAnimation()));
-        listBeans.add(new ListBean("zzsaddasz", new FrameAnimation()));
+        listBeans = new ArrayList();
+        listBeans.add(new ListBean("帧动画", new FrameAnimation()));
     }
 
     private void initListen() {
