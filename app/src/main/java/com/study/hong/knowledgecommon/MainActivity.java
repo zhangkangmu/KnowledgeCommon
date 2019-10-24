@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import com.study.hong.knowledgecommon.Animation.FrameAnimation;
+import com.study.hong.knowledgecommon.Animation.PropertAnimation;
 import com.study.hong.knowledgecommon.Animation.TweenAnimation;
 import com.study.hong.knowledgecommon.base.ListBean;
 import java.util.ArrayList;
@@ -29,11 +30,16 @@ public class MainActivity extends Activity {
         initDates();
         initListen();
     }
+
+    /**
+     * 在这里增加demo名称和类
+     */
     private void initDates() {
         map = new HashMap<>();
         listBeans = new ArrayList();
         listBeans.add(new ListBean("帧动画", new FrameAnimation()));
         listBeans.add(new ListBean("补间动画", new TweenAnimation()));
+        listBeans.add(new ListBean("属性动画", new PropertAnimation()));
     }
 
     private void initListen() {
