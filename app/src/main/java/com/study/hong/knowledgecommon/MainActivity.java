@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import com.study.hong.knowledgecommon.Animation.FrameAnimation;
+import com.study.hong.knowledgecommon.Animation.TweenAnimation;
 import com.study.hong.knowledgecommon.base.ListBean;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +33,7 @@ public class MainActivity extends Activity {
         map = new HashMap<>();
         listBeans = new ArrayList();
         listBeans.add(new ListBean("帧动画", new FrameAnimation()));
+        listBeans.add(new ListBean("补间动画", new TweenAnimation()));
     }
 
     private void initListen() {
