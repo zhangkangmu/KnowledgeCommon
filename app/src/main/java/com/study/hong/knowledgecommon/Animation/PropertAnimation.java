@@ -31,7 +31,6 @@ public class PropertAnimation extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_propert_animation);
         button = findViewById(R.id.button);
-        new ObjectAnimator();
         textview = findViewById(R.id.textview);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

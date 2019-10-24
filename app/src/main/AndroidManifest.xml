@@ -19,6 +19,7 @@
         <activity android:name=".Animation.FrameAnimation"/>
         <activity android:name=".Animation.TweenAnimation"/>
         <activity android:name=".Animation.PropertAnimation"/>
+        <activity android:name=".Animation.MyViewPropertyAnimator"/>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import com.study.hong.knowledgecommon.Animation.FrameAnimation;
+import com.study.hong.knowledgecommon.Animation.MyViewPropertyAnimator;
 import com.study.hong.knowledgecommon.Animation.PropertAnimation;
 import com.study.hong.knowledgecommon.Animation.TweenAnimation;
 import com.study.hong.knowledgecommon.base.ListBean;
@@ -39,7 +40,8 @@ public class MainActivity extends Activity {
         listBeans = new ArrayList();
         listBeans.add(new ListBean("帧动画", new FrameAnimation()));
         listBeans.add(new ListBean("补间动画", new TweenAnimation()));
-        listBeans.add(new ListBean("属性动画", new PropertAnimation()));
+        listBeans.add(new ListBean("属性动画--ObjectAnimator", new PropertAnimation()));
+        listBeans.add(new ListBean("属性动画--ViewPropertyAnimator", new MyViewPropertyAnimator()));
     }
 
     private void initListen() {
