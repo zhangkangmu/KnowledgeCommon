@@ -25,6 +25,7 @@ import butterknife.OnClick;
 /**
  * Created by hong on 2019/10/25.
  * 过渡动画  https://blog.csdn.net/wuyuxing24/article/details/78857912
+ * 通过布局的方式实现
  */
 //ChangeBounds：检测View的位置边界创建移动和缩放动画(关注布局边界的变化)
 //ChangeTransform:检测View的scale和rotation创建缩放和旋转动画(关注scale和ratation的变化)

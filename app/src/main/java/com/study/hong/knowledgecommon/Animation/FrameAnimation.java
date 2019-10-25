@@ -10,6 +10,8 @@ import android.view.View;
 import com.study.hong.knowledgecommon.R;
 
 /**
+ * https://github.com/tuacy/TransitionDemo     学习看这个github demo
+ * 博客这个：https://blog.csdn.net/wuyuxing24/article/details/78857912
  * Created by hong on 2019/10/24.
  * 逐帧动画
  * 主要看frame_animation，在drawble里
