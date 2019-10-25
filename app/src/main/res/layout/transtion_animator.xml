@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/contain"
+        android:background="#3333"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+<ScrollView
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/contain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/changebounds"
+        app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="changebounds" />
+    <Button
+        android:id="@+id/changetransform"
+        app:layout_constraintTop_toBottomOf="@+id/changebounds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changetransform" />
+    <Button
+        android:id="@+id/changeclipbounds"
+        app:layout_constraintTop_toBottomOf="@+id/changetransform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeclipbounds" />
+    <Button
+        android:id="@+id/changeimagetransform"
+        app:layout_constraintTop_toBottomOf="@+id/changeclipbounds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeimagetransform" />
+    <Button
+        android:id="@+id/fade"
+        app:layout_constraintTop_toBottomOf="@+id/changeimagetransform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fade" />
+    <Button
+        android:id="@+id/explode"
+        app:layout_constraintTop_toBottomOf="@+id/fade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="explode" />
+    <Button
+        android:id="@+id/autotransition"
+        app:layout_constraintTop_toBottomOf="@+id/explode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="autotransition" />
+        <Button
+            android:id="@+id/doubleAnimation"
+            app:layout_constraintTop_toBottomOf="@+id/autotransition"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多个动画组合" />
+        <Button
+            android:id="@+id/clean"
+            app:layout_constraintTop_toBottomOf="@+id/doubleAnimation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恢复原状" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>
