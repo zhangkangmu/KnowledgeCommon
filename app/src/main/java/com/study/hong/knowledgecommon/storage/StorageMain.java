@@ -2,6 +2,7 @@ package com.study.hong.knowledgecommon.storage;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.MotionEvent;
@@ -42,7 +43,7 @@ public class StorageMain extends Activity {
                 startActivity(new Intent(this, TextSave.class));
                 break;
             case R.id.shared_preference:
-
+                startActivity(new Intent(this, SharedPreferencesSave.class));
                 break;
             case R.id.sql_save:
 
