@@ -21,6 +21,8 @@
         <activity android:name=".Animation.PropertAnimation"/>
         <activity android:name=".Animation.MyViewPropertyAnimator"/>
         <activity android:name=".Animation.MyTranstionAnimator"/>
+        <activity android:name=".storage.StorageMain"/>
+        <activity android:name=".storage.TextSave"/>
     </application>
 
 </manifest>

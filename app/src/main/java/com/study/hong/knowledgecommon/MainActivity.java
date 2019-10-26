@@ -10,6 +10,8 @@ import com.study.hong.knowledgecommon.Animation.MyViewPropertyAnimator;
 import com.study.hong.knowledgecommon.Animation.PropertAnimation;
 import com.study.hong.knowledgecommon.Animation.TweenAnimation;
 import com.study.hong.knowledgecommon.base.ListBean;
+import com.study.hong.knowledgecommon.storage.StorageMain;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import butterknife.BindView;
@@ -44,6 +46,7 @@ public class MainActivity extends Activity {
         listBeans.add(new ListBean("属性动画--ObjectAnimator", new PropertAnimation()));
         listBeans.add(new ListBean("属性动画--ViewPropertyAnimator", new MyViewPropertyAnimator()));
         listBeans.add(new ListBean("属性动画--过渡动画", new MyTranstionAnimator()));
+        listBeans.add(new ListBean("数据存储", new StorageMain()));
     }
 
     private void initListen() {

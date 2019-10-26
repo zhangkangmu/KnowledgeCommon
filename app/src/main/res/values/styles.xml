@@ -19,4 +19,13 @@
         <!-- 退出一个Activity的时候，B返回到A B退出动画 -->
         <item name="android:activityCloseExitAnimation">@anim/leave_out</item>
     </style>
+
+    <style name="TextOverCount" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+    <style name="MyEditTextStyle" >
+        <item name="colorControlNormal">@color/gray</item><!--默认显示下划线的颜色-->
+        <item name="colorControlActivated">@color/black</item><!--点击后下划线的颜色-->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
 </resources>
