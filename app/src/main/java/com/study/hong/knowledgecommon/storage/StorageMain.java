@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.study.hong.knowledgecommon.R;
+import com.study.hong.knowledgecommon.storage.sql.SQLDataSave;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,7 +47,7 @@ public class StorageMain extends Activity {
                 startActivity(new Intent(this, SharedPreferencesSave.class));
                 break;
             case R.id.sql_save:
-
+                startActivity(new Intent(this, SQLDataSave.class));
                 break;
         }
     }

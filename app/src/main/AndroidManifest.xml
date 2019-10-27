@@ -24,6 +24,7 @@
         <activity android:name=".storage.StorageMain"/>
         <activity android:name=".storage.TextSave"/>
         <activity android:name=".storage.SharedPreferencesSave"/>
+        <activity android:name=".storage.sql.SQLDataSave"/>
     </application>
 
 </manifest>

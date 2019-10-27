@@ -75,4 +75,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="读取" />
+
+    <!--后面仅在数据库中使用-->
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="刪除" />
+    <Button
+        android:id="@+id/modity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="修改数据" />
 </LinearLayout>
