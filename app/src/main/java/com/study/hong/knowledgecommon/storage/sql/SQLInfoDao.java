@@ -56,6 +56,7 @@ public class SQLInfoDao {
 
         //执行sql语句需要sqliteDatabase对象
         //调用getReadableDatabase方法,来初始化数据库的创建
+        //为什么不能放在构造函数中，因为操作完后要及时关闭
         SQLiteDatabase db = helper.getReadableDatabase();
         ContentValues values = new ContentValues();//是用map封装的对象，用来存放值
         values.put("username", (String) userName);
