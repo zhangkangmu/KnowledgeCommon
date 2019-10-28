@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="user_password"/>
+    <version value="2"/>
+    <list>
+        <!--一个表名-->
+        <mapping class="com.study.hong.knowledgecommon.storage.sqllitepal.SQLLitepalDao" />
+    </list>
+</litepal>

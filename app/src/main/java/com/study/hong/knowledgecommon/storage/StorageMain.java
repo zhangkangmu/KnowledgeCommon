@@ -2,15 +2,14 @@ package com.study.hong.knowledgecommon.storage;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 import com.study.hong.knowledgecommon.R;
 import com.study.hong.knowledgecommon.storage.sql.SQLDataSave;
+import com.study.hong.knowledgecommon.storage.sqllitepal.SQLLitePalSave;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +27,8 @@ public class StorageMain extends Activity {
     TextView sharedPreference;
     @BindView(R.id.sql_save)
     TextView sqlSave;
+    @BindView(R.id.litepal_save)
+    TextView litepalSave;
     private Unbinder unbinder;
 
     @Override
@@ -37,7 +38,7 @@ public class StorageMain extends Activity {
         unbinder = ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.text_save, R.id.shared_preference, R.id.sql_save})
+    @OnClick({R.id.text_save, R.id.shared_preference, R.id.sql_save,R.id.litepal_save})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.text_save:
@@ -49,6 +50,9 @@ public class StorageMain extends Activity {
             case R.id.sql_save:
                 startActivity(new Intent(this, SQLDataSave.class));
                 break;
+            case R.id.litepal_save:
+                startActivity(new Intent(this, SQLLitePalSave.class));
+                break;
         }
     }
 
@@ -57,4 +61,5 @@ public class StorageMain extends Activity {
         super.onDestroy();
         unbinder.unbind();
     }
+
 }

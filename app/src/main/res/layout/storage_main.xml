@@ -19,7 +19,13 @@
     <TextView
         android:id="@+id/sql_save"
         android:layout_marginTop="10dp"
-        android:text="数据库存储"
+        android:text="数据库存储--原生"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/litepal_save"
+        android:layout_marginTop="10dp"
+        android:text="数据库存储--第三方"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

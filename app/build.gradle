@@ -33,4 +33,7 @@ dependencies {
 
     compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
+    //数据库第三方
+    implementation 'org.litepal.android:core:1.6.1'
+    implementation 'com.wanjian:sak-autopilot:0.3.0'
 }
