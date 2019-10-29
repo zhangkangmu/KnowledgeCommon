@@ -11,6 +11,9 @@ import com.study.hong.knowledgecommon.Animation.PropertAnimation;
 import com.study.hong.knowledgecommon.Animation.TweenAnimation;
 import com.study.hong.knowledgecommon.base.ListBean;
 import com.study.hong.knowledgecommon.storage.StorageMain;
+import com.study.hong.knowledgecommon.thread.MyBitmapUtils;
+import com.study.hong.knowledgecommon.thread.MyThreadPool;
+import com.study.hong.knowledgecommon.thread.ThraedMain;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -47,6 +50,9 @@ public class MainActivity extends Activity {
         listBeans.add(new ListBean("属性动画--ViewPropertyAnimator", new MyViewPropertyAnimator()));
         listBeans.add(new ListBean("属性动画--过渡动画", new MyTranstionAnimator()));
         listBeans.add(new ListBean("数据存储", new StorageMain()));
+        listBeans.add(new ListBean("Handler的使用", new ThraedMain()));
+        listBeans.add(new ListBean("AsyncTask的使用--下载图片", new MyBitmapUtils()));
+        listBeans.add(new ListBean("线程池的使用--下载图片", new MyThreadPool()));
     }
 
     private void initListen() {
