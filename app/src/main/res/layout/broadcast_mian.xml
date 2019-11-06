@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1_IP拨号器"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_sd_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2_sd卡状态的监听"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_electricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="3_省电助手"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="4_卸载安装应用"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_begain_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="5_开启启动"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_send_disorder_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="6_发送一条无序广播"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/receiver_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="7_接收自定义广播"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/send_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="8_习大大发大米demo"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/recceiver_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="9_接收大米"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/special_broadcast_recceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="10_特殊的广播接收者"
+        android:textSize="20dp" />
+</LinearLayout>

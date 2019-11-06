@@ -69,5 +69,6 @@ public class ThraedMain extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         unbinder.unbind();
+        mHandler.removeCallbacksAndMessages(null);
     }
 }

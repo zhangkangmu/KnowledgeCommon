@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.study.hong.knowledgecommon">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
     <application
-        android:allowBackup="true"
         android:name=".MyApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -17,19 +20,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Animation.FrameAnimation"/>
-        <activity android:name=".Animation.TweenAnimation"/>
-        <activity android:name=".Animation.PropertAnimation"/>
-        <activity android:name=".Animation.MyViewPropertyAnimator"/>
-        <activity android:name=".Animation.MyTranstionAnimator"/>
-        <activity android:name=".storage.StorageMain"/>
-        <activity android:name=".storage.TextSave"/>
-        <activity android:name=".storage.SharedPreferencesSave"/>
-        <activity android:name=".storage.sql.SQLDataSave"/>
-        <activity android:name=".storage.sqllitepal.SQLLitePalSave"/>
-        <activity android:name=".thread.ThraedMain"/>
-        <activity android:name=".thread.MyBitmapUtils"/>
-        <activity android:name=".thread.MyThreadPool"/>
+        <activity android:name=".Animation.FrameAnimation" />
+        <activity android:name=".Animation.TweenAnimation" />
+        <activity android:name=".Animation.PropertAnimation" />
+        <activity android:name=".Animation.MyViewPropertyAnimator" />
+        <activity android:name=".Animation.MyTranstionAnimator" />
+        <activity android:name=".storage.StorageMain" />
+        <activity android:name=".storage.TextSave" />
+        <activity android:name=".storage.SharedPreferencesSave" />
+        <activity android:name=".storage.sql.SQLDataSave" />
+        <activity android:name=".storage.sqllitepal.SQLLitePalSave" />
+        <activity android:name=".thread.ThraedMain" />
+        <activity android:name=".thread.MyBitmapUtils" />
+        <activity android:name=".thread.MyThreadPool" />
+
+        <activity android:name=".broadcast.BroadCastMian" />
+
+
+        <receiver android:name=".broadcast.OutGoingCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.SdcardReceiver">
+            <intent-filter>
+                <!--sd卡卸载-->
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <!--sd卡挂载-->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <!-- 想让上面的卸载和挂载生效要增加这个 “约束”，固定，因为一般是文件，所以安全考虑-->
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
