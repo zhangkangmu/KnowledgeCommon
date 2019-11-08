@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="3_省电助手"
+        android:text="3_短信窃听器"
         android:textSize="20dp" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="5_开启启动"
+        android:text="5_开启启动-重启广播"
         android:textSize="20dp" />
 
     <TextView
@@ -49,7 +49,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="6_发送一条无序广播"
+        android:textColor="#000000"
+        android:text="6_发送一条无序广播---另外一个demo接收"
         android:textSize="20dp" />
 
     <TextView
@@ -57,15 +58,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textColor="#000000"
         android:text="7_接收自定义广播"
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/send_demo"
+        android:id="@+id/send_oder_demo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="8_习大大发大米demo"
+        android:textColor="#000000"
         android:textSize="20dp" />
 
     <TextView
@@ -82,5 +85,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="10_特殊的广播接收者"
+        android:textColor="#000000"
         android:textSize="20dp" />
 </LinearLayout>

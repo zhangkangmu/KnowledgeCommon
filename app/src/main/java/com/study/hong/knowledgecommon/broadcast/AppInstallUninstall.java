@@ -1,4 +1,4 @@
-package com.study.hong.knowledgecommon;
+package com.study.hong.knowledgecommon.broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

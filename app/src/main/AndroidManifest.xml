@@ -7,7 +7,9 @@
     <!--接到电话的权限-->
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <!--收到短信的权限-->
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!--重启的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:name=".MyApplication"
@@ -50,11 +52,11 @@
         <receiver android:name=".broadcast.SdcardReceiver">
             <intent-filter>
                 <!--sd卡卸载-->
-                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
                 <!--sd卡挂载-->
-                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
                 <!-- 想让上面的卸载和挂载生效要增加这个 “约束”，固定，因为一般是文件，所以安全考虑-->
-                <data android:scheme="file"/>
+                <data android:scheme="file" />
             </intent-filter>
         </receiver>
         <receiver android:name=".broadcast.SmsListenerRecevicer">
@@ -64,17 +66,26 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".AppInstallUninstall">
+        <receiver android:name=".broadcast.AppInstallUninstall">
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
                 <!--安装的广播，补充之后的，用这个-->
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <!--卸载的广播-->
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
                 <!--增加约束-->
-                <data android:scheme="package"/>
+                <data android:scheme="package" />
             </intent-filter>
         </receiver>
+
+        <receiver android:name=".broadcast.BootReceiver">
+            <intent-filter>
+                <!--重启的广播-->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
