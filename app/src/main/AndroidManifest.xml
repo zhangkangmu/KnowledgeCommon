@@ -2,8 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.study.hong.knowledgecommon">
 
+    <!--sd卡的权限-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--接到电话的权限-->
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!--收到短信的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <application
         android:name=".MyApplication"
@@ -42,6 +46,7 @@
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
         </receiver>
+
         <receiver android:name=".broadcast.SdcardReceiver">
             <intent-filter>
                 <!--sd卡卸载-->
@@ -50,6 +55,24 @@
                 <action android:name="android.intent.action.MEDIA_MOUNTED"/>
                 <!-- 想让上面的卸载和挂载生效要增加这个 “约束”，固定，因为一般是文件，所以安全考虑-->
                 <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.SmsListenerRecevicer">
+            <intent-filter>
+                <!--收到短信的广播，提示中没有-->
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AppInstallUninstall">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <!--安装的广播，补充之后的，用这个-->
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <!--卸载的广播-->
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <!--增加约束-->
+                <data android:scheme="package"/>
             </intent-filter>
         </receiver>
     </application>
