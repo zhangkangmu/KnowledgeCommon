@@ -42,7 +42,10 @@
 
         <activity android:name=".broadcast.BroadCastMian" />
 
+        <!--常见对话框-->
+        <activity android:name=".Dialog.DialogMian"/>
 
+        <!--各种广播-->
         <receiver android:name=".broadcast.OutGoingCallReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />

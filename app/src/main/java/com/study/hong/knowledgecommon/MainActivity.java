@@ -10,6 +10,7 @@ import com.study.hong.knowledgecommon.Animation.MyTranstionAnimator;
 import com.study.hong.knowledgecommon.Animation.MyViewPropertyAnimator;
 import com.study.hong.knowledgecommon.Animation.PropertAnimation;
 import com.study.hong.knowledgecommon.Animation.TweenAnimation;
+import com.study.hong.knowledgecommon.Dialog.DialogMian;
 import com.study.hong.knowledgecommon.base.ListBean;
 import com.study.hong.knowledgecommon.broadcast.BroadCastMian;
 import com.study.hong.knowledgecommon.storage.StorageMain;
@@ -65,6 +66,8 @@ public class MainActivity extends Activity {
 
         //广播
         listBeans.add(new ListBean("广播的知识点", new BroadCastMian()));
+//        常见对话框
+        listBeans.add(new ListBean("常见对话框", new DialogMian()));
     }
 
     private void initListen() {
